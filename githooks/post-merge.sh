@@ -5,12 +5,12 @@
 
 current_branch="$(git branch -l | grep "* ")"
 
-sinTestingBranch="https://cdn.jsdelivr.net/gh/brettlw/DevDubX/testing"
-sinMasterBranch="https://cdn.jsdelivr.net/gh/brettlw/DevDubX/master"
+sinTestingBranch="https://raw.githubusercontent.com/gh/brettlw/DevDubX/testing"
+sinMasterBranch="https://raw.githubusercontent.com/gh/brettlw/DevDubX/master"
 fgDevBranch="https://rawgit.com/FranciscoG/DevDubX/dev"
 
 function fixGitRoot() {
-  sed -E -i '' "s,https://rawgit.com/[A-Za-z0-9]+/DevDubX/[A-Za-z0-9]+,${1},g" beta.js
+  sed -E -i '' "s,https://raw.githubusercontent.com/[A-Za-z0-9]+/DevDubX/[A-Za-z0-9]+,${1},g" beta.js
 }
 
 echo "Currently in branch: ${current_branch}"
