@@ -22,13 +22,13 @@ Usage
 
 * We have a Google Chrome extension [here](https://chrome.google.com/webstore/detail/dubx/oceofndagjnpebjmknefoelcpcnpcedm?utm_source=chrome-app-launcher-info-dialog)
 
-* If this does not work, go to `https://raw.githubusercontent.com/brettlw/DevDubX/master/beta.js` and copy paste its content into your console (accessible in chrome by pressing f12) when on Dubtrack.fm in a community.
+* If this does not work, go to `https://raw.githubusercontent.com/gh/brettlw/DevDubX/master/beta.js` and copy paste its content into your console (accessible in chrome by pressing f12) when on Dubtrack.fm in a community.
 
 -----------------
 Custom CSS
 ---
 
-* plug.dj theme made by Kris and edited by sinful. Paste `https://raw.githubusercontent.com/brettlw/DevDubX/master/themes/PlugTheme.css` in the Custom CSS option in Dub X, then click 'Okay'
+* plug.dj theme made by Kris and edited by sinful. Paste `https://raw.githubusercontent.com/gh/brettlw/DevDubX/master/themes/PlugTheme.css` in the Custom CSS option in Dub X, then click 'Okay'
 
 -----------------
 Features

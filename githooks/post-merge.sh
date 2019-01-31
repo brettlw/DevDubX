@@ -5,8 +5,8 @@
 
 current_branch="$(git branch -l | grep "* ")"
 
-sinTestingBranch="https://raw.githubusercontent.com/brettlw/DevDubX/testing"
-sinMasterBranch="https://raw.githubusercontent.com/brettlw/DevDubX/master"
+sinTestingBranch="https://raw.githubusercontent.com/gh/brettlw/DevDubX/testing"
+sinMasterBranch="https://raw.githubusercontent.com/gh/brettlw/DevDubX/master"
 fgDevBranch="https://rawgit.com/FranciscoG/DevDubX/dev"
 
 function fixGitRoot() {
