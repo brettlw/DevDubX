@@ -75,7 +75,7 @@ if (!hello_run && Dubtrack.session.id) {
 
     //Ref 2: Options
     var hello = {
-        gitRoot: 'https://raw.githubusercontent.com/gh/brettlw/DevDubX/master',
+        gitRoot: 'https://cdn.jsdelivr.net/gh/brettlw/DevDubX/',
         //Ref 2.1: Initialize
         personalize: function() {
             $('.isUser').text(Dubtrack.session.get('username'));
@@ -760,7 +760,7 @@ if (!hello_run && Dubtrack.session.id) {
             function GetJ(_url, _cb){
                 var xhr = new XMLHttpRequest();
                 xhr.open('GET', _url);
-
+                
                 if(headers) {
                     for (var property in headers) {
                         if (headers.hasOwnProperty(property)) {
@@ -1006,7 +1006,7 @@ if (!hello_run && Dubtrack.session.id) {
             if($chatTarget.hasClass('sending')) {
                 $chatTarget.removeClass('sending');
             }
-
+            
             if (!$chatTarget.html()) { return; } // nothing to do
 
             if (self.bttvJSONSLoaded) { _regex = self.bttv.chatRegex; }
@@ -1040,7 +1040,7 @@ if (!hello_run && Dubtrack.session.id) {
         optionTwitchEmotes: function(){
             document.body.addEventListener('twitch:loaded', this.loadBTTVEmotes);
             document.body.addEventListener('bttv:loaded', this.loadTastyEmotes);
-
+            
             if (!options.let_twitch_emotes) {
                 if (!hello.twitchJSONSLoaded) {
                     hello.loadTwitchEmotes();
@@ -1129,7 +1129,7 @@ if (!hello_run && Dubtrack.session.id) {
             var updatedText = inputText.split(' ').map(function(c,i,r){
                 var fullStr = str.toLowerCase();
                 var partialStr = c.toLowerCase();
-                if (fullStr.indexOf(partialStr) === 0) {
+                if (fullStr.indexOf(partialStr) === 0) { 
                     return str;
                 } else {
                     return c;
@@ -1143,7 +1143,7 @@ if (!hello_run && Dubtrack.session.id) {
             var self = hello;
             self.displayBoxIndex += diff;
             var oBoxCollection = $(".ac-show li");
-
+            
             // remove "press enter to select" span
             $('.ac-list-press-enter').remove();
 
@@ -1274,7 +1274,7 @@ if (!hello_run && Dubtrack.session.id) {
                         self.previewList( self.filterUsers(p2) );
                     }
                 }
-
+                
             });
 
             var lastChar = currentText.charAt(currentText.length - 1);
@@ -1689,7 +1689,7 @@ if (!hello_run && Dubtrack.session.id) {
                                         '<span class="dubinfo-text">@' + val.username + '</span>' +
                                     '</li>'
                         });
-                        html += '</ul>';
+                        html += '</ul>';                     
                     }
                     else{
                         html = '<div id="dubinfo-preview" class="dubinfo-show dubx-updubs-hover dubx-no-dubs" style="border-color: '+dubupBackground+'">' +
@@ -1763,7 +1763,7 @@ if (!hello_run && Dubtrack.session.id) {
                                             '<span class="dubinfo-text">@' + val.username + '</span>' +
                                         '</li>'
                             });
-                            html += '</ul>';
+                            html += '</ul>';                     
                         }
                         else{
                             html = '<div id="dubinfo-preview" class="dubinfo-show dubx-downdubs-hover dubx-no-dubs" style="border-color: '+dubdownBackground+'">' +
@@ -1842,7 +1842,7 @@ if (!hello_run && Dubtrack.session.id) {
                                         '<span class="dubinfo-text">@' + val.username + '</span>' +
                                     '</li>'
                         });
-                        html += '</ul>';
+                        html += '</ul>';                     
                     }
                     else{
                         html = '<div id="dubinfo-preview" class="dubinfo-show dubx-grabs-hover dubx-no-grabs" style="border-color: '+grabsBackground+'">' +
@@ -2071,7 +2071,7 @@ if (!hello_run && Dubtrack.session.id) {
         snooze: function() {
             // the function both mutes and unmutes
             Dubtrack.room.player.mutePlayer();
-
+            
             // we want to track the button being pressed because Dubtrack.room.player.muted_player
             // gets set even when you press the normal volume icon
             if (!hello.eventUtils.snoozed) {

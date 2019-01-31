@@ -53,7 +53,7 @@ if (!hello_run && Dubtrack.session.id && !ifUserBanned) {
 
     //Ref 2: Options
     var hello = {
-        gitRoot: 'https://raw.githubusercontent.com/gh/brettlw/DevDubX/master',
+        gitRoot: 'https://cdn.jsdelivr.net/gh/brettlw/DevDubX/',
         //Ref 2.1: Initialize
         personalize: function() {
             $('.isUser').text(Dubtrack.session.get('username'));
@@ -1400,7 +1400,7 @@ if (!hello_run && Dubtrack.session.id && !ifUserBanned) {
 } else {
     function onErr(error) {
         var onErr = [
-            '<link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/gh/brettlw/DevDubX/master/css/asset.css">',
+            '<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/brettlw/DevDubX/css/asset.css">',
             '<div class="onErr">',
                 '<div class="container">',
                     '<div class="title">',
