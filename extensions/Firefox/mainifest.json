@@ -4,7 +4,7 @@
    "short_name": "DubX",
    "author": "Al3366",
    "description": "Automatically loads DubX on dubtrack.fm",
-   "homepage_url": "https://dubx.net/",
+   "homepage_url": "https://google.com/",
    "version": "4.20",
    "browser_action": {
     "default_icon": "icons/48.png"

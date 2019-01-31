@@ -6,7 +6,7 @@
    "short_name": "DubX",
    "author": "Al3366",
    "description": "DubX - a small collection of enhancements for Dubtrack.fm",
-   "homepage_url": "https://dubx.net/",
+   "homepage_url": "https://google.com/",
    "version": "4.0",
    "browser_action": {
     "default_icon": "icons/48.png"
@@ -30,7 +30,7 @@
         "48": "icons/48.png",
         "128": "icons/128.png"
     },
-    
+
     "permissions": [
       "http://dubtrack.fm/*",
       "https://dubtrack.fm/*",
